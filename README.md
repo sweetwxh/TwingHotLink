@@ -1,6 +1,6 @@
 #Twing Hot Link - For PSP
 --
-This is a software that developed for PSP remote connection, the initial motivation of developing was simply for friends team up to play MONSTER HUNTER through USB device. Although it was ready to open source 3 yrs ago, due to my negligence. Till today, the long lost source code was found in my PC, so, here it is.
+This is a software that developed for PSP remote connection, the initial motivation of developing was simply for friends team up to play MONSTER HUNTER through USB device. Although it was ready to open source 5 yrs ago, due to my negligence. Till today, the long lost source code was found in my PC, so, here it is.
 
 *stepon tech*
 
