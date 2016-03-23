@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Chat>
+  <Phrase Hotkey="6">Fast Phrase 6</Phrase>
+  <Phrase Hotkey="7">Fast Phrase 7</Phrase>
+  <Phrase Hotkey="8">Fast Phrase 8</Phrase>
+  <Phrase Hotkey="9">Fast Phrase 9</Phrase>
+  <Phrase Hotkey="1">Fast Phrase 1</Phrase>
+  <Phrase Hotkey="2">Fast Phrase 2</Phrase>
+  <Phrase Hotkey="3">Fast Phrase 3</Phrase>
+  <Phrase Hotkey="4">Fast Phrase 4</Phrase>
+  <Phrase Hotkey="5">Fast Phrase 5</Phrase>
+</Chat>

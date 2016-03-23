@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64C648D9-1951-4044-A772-CB11C17F9E4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TwingHotLink</RootNamespace>
+    <AssemblyName>TwingHotLink</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Twing Hot Link\安装测试\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <OutputPath>bin\x64\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>twing.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>390DF308356F1705FD3446DE98E979AF5B8BA9D5</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TwingHotLink_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PcapDotNet.Base, Version=0.10.0.20588, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <HintPath>..\packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PcapDotNet.Core, Version=0.10.0.20632, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=x86">
+      <HintPath>..\packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PcapDotNet.Core.Extensions, Version=0.10.0.20638, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <HintPath>..\packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Core.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PcapDotNet.Packets, Version=0.10.0.20603, Culture=neutral, PublicKeyToken=4b6f3e583145a652, processorArchitecture=MSIL">
+      <HintPath>..\packages\PcapDotNet.0.10.2\lib\net40\PcapDotNet.Packets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutTwing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutTwing.Designer.cs">
+      <DependentUpon>AboutTwing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\IChat.cs" />
+    <Compile Include="Chat\PhraseMapping.cs" />
+    <Compile Include="ClientFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientFrame.Designer.cs">
+      <DependentUpon>ClientFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client\DataCatcher.cs" />
+    <Compile Include="Client\GameClient.cs" />
+    <Compile Include="Common\DataPack.cs" />
+    <Compile Include="Common\DataUnpack.cs" />
+    <Compile Include="Common\ICMDProcessor.cs" />
+    <Compile Include="DefineChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefineChat.Designer.cs">
+      <DependentUpon>DefineChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupChat.Designer.cs">
+      <DependentUpon>GroupChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMainFrame.cs" />
+    <Compile Include="ProcessKiller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProcessKiller.Designer.cs">
+      <DependentUpon>ProcessKiller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServerFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServerFrame.Designer.cs">
+      <DependentUpon>ServerFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server\ClientInfo.cs" />
+    <Compile Include="Server\Extensions\BufferPool.cs" />
+    <Compile Include="Server\Extensions\SocketArgsPool.cs" />
+    <Compile Include="Server\GameServer.cs" />
+    <Compile Include="SetFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetFrame.Designer.cs">
+      <DependentUpon>SetFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ErrorLogger.cs" />
+    <Compile Include="Tools\GlobleSetting.cs" />
+    <Compile Include="Tools\NetData.cs" />
+    <Compile Include="Tools\NetworkDevices.cs" />
+    <Compile Include="Tools\NumberTranslate.cs" />
+    <Compile Include="Tools\ParamReader.cs" />
+    <Compile Include="Tools\PingTool.cs" />
+    <Compile Include="Tools\ProcessManager.cs" />
+    <Compile Include="Tools\ThreadSafeSetter.cs" />
+    <Compile Include="Tools\WAVSounds.cs" />
+    <Compile Include="TwingFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TwingFrame.Designer.cs">
+      <DependentUpon>TwingFrame.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutTwing.resx">
+      <DependentUpon>AboutTwing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientFrame.resx">
+      <DependentUpon>ClientFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefineChat.resx">
+      <DependentUpon>DefineChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupChat.resx">
+      <DependentUpon>GroupChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcessKiller.resx">
+      <DependentUpon>ProcessKiller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ServerFrame.resx">
+      <DependentUpon>ServerFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetFrame.resx">
+      <DependentUpon>SetFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TwingFrame.resx">
+      <DependentUpon>TwingFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\toolBarBg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\copyright.jpg" />
+    <EmbeddedResource Include="Resources\pspicon.jpg" />
+    <EmbeddedResource Include="Resources\servericon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\twing.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\crintro.jpg" />
+    <EmbeddedResource Include="Resources\copyright_black.jpg" />
+    <Content Include="bridge.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="phrase.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="process.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="setting.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="twing.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

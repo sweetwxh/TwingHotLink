@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<GlobleConfig>
+  <PingTimeout>3000</PingTimeout>
+  <ProcessLimit>0</ProcessLimit>
+  <RequestTimeout>50</RequestTimeout>
+  <BufferSize>2048</BufferSize>
+  <TcpPort>9120</TcpPort>
+  <UdpPort>9121</UdpPort>
+  <ClientPort>9122</ClientPort>
+  <Adapter>rpcap://\Device\NPF_{979E74D4-50C0-4588-8507-310F0369417E}</Adapter>
+  <PlayerID>Sweet</PlayerID>
+  <DataMode>Async</DataMode>
+  <ServerMode>Off</ServerMode>
+  <LastAddress>59.173.40.182</LastAddress>
+  <SyncMode>On</SyncMode>
+  <SendTimeout>300</SendTimeout>
+</GlobleConfig>
